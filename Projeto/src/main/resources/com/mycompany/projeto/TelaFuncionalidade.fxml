@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.projeto.ControladorFuncionalidade">
+    
+   <children>
+      <VBox alignment="CENTER" spacing="10" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         
+         <Label style="-fx-text-fill: #000000;" text="Menu Principal">
+            <font>
+               <Font name="System Bold" size="26.0" />
+            </font>
+            <padding>
+               <Insets bottom="15.0" />
+            </padding>
+         </Label>
+         
+         <Label style="-fx-text-fill: #666666;" text="Sistema de Controle de Frota">
+            <font>
+               <Font size="13.0" />
+            </font>
+            <padding>
+               <Insets bottom="25.0" />
+            </padding>
+         </Label>
+         
+         <VBox alignment="CENTER" spacing="12">
+             
+            <HBox alignment="CENTER" spacing="15">
+               <Button mnemonicParsing="false" onAction="#registrarVeiculo" prefHeight="42.0" prefWidth="220.0" text="Registrar Veículo">
+                  <font>
+                     <Font size="13.0" />
+                  </font>
+               </Button>
+               
+               <Button mnemonicParsing="false" onAction="#registrarDevolucao" prefHeight="42.0" prefWidth="220.0" text="Devolução de Veículo">
+                  <font>
+                     <Font size="13.0" />
+                  </font>
+               </Button>
+            </HBox>
+            
+            <HBox alignment="CENTER" spacing="15">
+               
+               <Button mnemonicParsing="false" onAction="#registrarMotorista" prefHeight="42.0" prefWidth="220.0" text="Registrar Motorista">
+                  <font>
+                     <Font size="13.0" />
+                  </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#consultarUtilizacoes" prefHeight="42.0" prefWidth="220.0" text="Consultar Retiradas">
+                  <font>
+                     <Font size="13.0" />
+                  </font>
+               </Button>
+            </HBox>
+            
+            <HBox alignment="CENTER" spacing="15">
+               <Button mnemonicParsing="false" onAction="#registrarRetirada" prefHeight="42.0" prefWidth="220.0" text="Retirada de Veículo">
+                  <font>
+                     <Font size="13.0" />
+                  </font>
+               </Button>
+               
+               <Button mnemonicParsing="false" onAction="#sair" prefHeight="42.0" prefWidth="220.0" text="Sair do Sistema">
+                  <font>
+                     <Font size="13.0" />
+                  </font>
+               </Button>
+            </HBox>
+         </VBox>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.projeto.ControladorUsuario">
+    
+   <children>
+      <Text layoutX="185.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Usuário" wrappingWidth="300.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      
+      <Label layoutX="135.0" layoutY="84.0" prefHeight="10.0" prefWidth="59.0" style="-fx-font-weight: bold;" text="Nome:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="135.0" layoutY="104.0" prefHeight="32.0" prefWidth="330.0" promptText="Nome completo" />
+      
+      <Label layoutX="135.0" layoutY="147.0" style="-fx-font-weight: bold;" text="Login:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLogin" layoutX="135.0" layoutY="167.0" prefHeight="32.0" prefWidth="330.0" promptText="Nome de usuário" />
+      
+      <Label layoutX="134.0" layoutY="207.0" style="-fx-font-weight: bold;" text="Senha:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSenha" layoutX="134.0" layoutY="227.0" prefHeight="32.0" prefWidth="330.0" promptText="Senha de acesso" />
+      
+      <Label fx:id="lblAviso" alignment="CENTER" layoutX="100.0" layoutY="260.0" prefHeight="25.0" prefWidth="400.0" wrapText="true" />
+      
+      <Button layoutX="249.0" layoutY="337.0" mnemonicParsing="false" onAction="#voltar" prefHeight="36.0" prefWidth="100.0" text="Retornar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      
+      <Button layoutX="249.0" layoutY="286.0" mnemonicParsing="false" onAction="#registrar_usuario" prefHeight="36.0" prefWidth="100.0" text="Cadastrar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
